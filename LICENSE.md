@@ -1,1 +1,1 @@
-Copyright by Chikashi Miyama
+Copyright 2013, Chikashi Miyama all rights reserved
