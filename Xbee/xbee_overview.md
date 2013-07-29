@@ -12,6 +12,11 @@ Appropriate for more complex and larger network.
 It is possible to route and forward messages.
 
 
+### Xbee pins
+![pins](img/pins.png)
+
+
+
 ### AT/API Operation
 
 #### AT Operation
@@ -21,3 +26,6 @@ forwards all received UART messages to another Xbee antenna
 #### API Operation
 
 works like Arduino
+##### API packet
+![pins](img/api.png)
+
