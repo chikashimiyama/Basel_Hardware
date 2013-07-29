@@ -41,3 +41,9 @@ get/set baudrate (speed of communication)
 6 = 57600
 7 = 115200
 
+#### ATAP
+get/set API operation
+
+0 = AT
+1 = API
+
