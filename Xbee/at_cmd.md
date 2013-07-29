@@ -15,15 +15,47 @@ get/set sampling rate of ADC
 0 = disabled
 10 = every 10 msec.
 
-#### ATD0, ATD1, ATD2, ATD3, ATD4
-set PIN
-Parameter Configuration
-0 Disabled
-1 n/a
-2 ADC
-3 DI
-4 DO low
-5 DO high
+#### ATD0, ATD1, ATD2, ATD3, ATD4, ATD5, ATD6, ATD7
+get/set PIN
+
+##### D0-D4
+* 0 = Disabled
+* 1 = n/a
+* 2 = ADC
+* 3 = DI
+* 4 = DO low
+* 5 = DO high
+
+##### D5
+* 0 = Disabled
+* 1 = Associated indicator
+* 2 = ADC
+* 3 = DI
+* 4 = DO low
+* 5 = DO high
+
+##### D6
+* 0 = Disabled
+* 1 = RTS flow control
+* 2 = (n/a)
+* 3 = DI
+* 4 = DO low
+* 5 = DO high
+
+##### D7
+* 0 = Disabled
+* 1 = CTS Flow Control
+* 2 = (n/a)
+* 3 = DI
+* 4 = DO low
+* 5 = DO high
+* 6 = RS485 Tx Enable Low
+* 7 = RS485 Tx Enable High
+* 
+##### D8
+* 0 = Disabled
+* 3 = DI
+(1,2,4 & 5 n/a)
 
 #### ATHV
 get hardware version
