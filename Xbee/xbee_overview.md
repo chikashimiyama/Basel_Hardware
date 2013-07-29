@@ -1,4 +1,14 @@
-Basel_Hardware
-==============
+### Xbee Types
 
-Handouts für die Seminare der Hardwareentwicklungskurs beim elektronischen Studio Basel 2013 -2014
+#### Xbee Series 1 (XBee IEEE 802.15.4)
+
+Appropriate for one to one or one to many communication.
+Easy to setup.
+
+
+##### Xbee Series ZB 
+
+Appropriate for more complex and larger network.
+It is possible to route and forward messages.
+
+
