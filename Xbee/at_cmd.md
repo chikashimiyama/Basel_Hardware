@@ -19,42 +19,42 @@ get/set sampling rate of ADC
 get/set PIN
 
 ##### D0-D4
-* 0 = Disabled
-* 1 = n/a
-* 2 = ADC
-* 3 = DI
-* 4 = DO low
-* 5 = DO high
+*0 = Disabled
+*1 = n/a
+*2 = ADC
+*3 = DI
+*4 = DO low
+*5 = DO high
 
 ##### D5
-* 0 = Disabled
-* 1 = Associated indicator
-* 2 = ADC
-* 3 = DI
-* 4 = DO low
-* 5 = DO high
+*0 = Disabled
+*1 = Associated indicator
+*2 = ADC
+*3 = DI
+*4 = DO low
+*5 = DO high
 
 ##### D6
-* 0 = Disabled
-* 1 = RTS flow control
-* 2 = (n/a)
-* 3 = DI
-* 4 = DO low
-* 5 = DO high
+*0 = Disabled
+*1 = RTS flow control
+*2 = (n/a)
+*3 = DI
+*4 = DO low
+*5 = DO high
 
 ##### D7
-* 0 = Disabled
-* 1 = CTS Flow Control
-* 2 = (n/a)
-* 3 = DI
-* 4 = DO low
-* 5 = DO high
-* 6 = RS485 Tx Enable Low
-* 7 = RS485 Tx Enable High
-* 
+*0 = Disabled
+*1 = CTS Flow Control
+*2 = (n/a)
+*3 = DI
+*4 = DO low
+*5 = DO high
+*6 = RS485 Tx Enable Low
+*7 = RS485 Tx Enable High
+ 
 ##### D8
-* 0 = Disabled
-* 3 = DI
+*0 = Disabled
+*3 = DI
 (1,2,4 & 5 n/a)
 
 #### ATHV
