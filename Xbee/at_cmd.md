@@ -9,6 +9,9 @@ factory reset
 #### ATWR
 Save setting
 
+#### ATMY
+OWN address
+
 #### ATID
 get/set PAN(Personal Area Network) ID
 Only modules with matching PAN IDs can communicate with each other.
@@ -17,8 +20,6 @@ Only modules with matching PAN IDs can communicate with each other.
 get/set sampling rate of ADC
 0 = disabled
 10 = every 10 msec.
-
-
 
 #### ATBD
 get/set baudrate (speed of communication)
@@ -81,6 +82,14 @@ get/set PIN
 0. Disabled
 3. DI
 (1,2,4 & 5 n/a)
+
+#### ATMM
+Mac mode
+0 Digi header 
+1 802.15
+2 802.15 (no ACK)
+3 Digi header (no ACK)
+
 
 #### ATHV
 get hardware version
