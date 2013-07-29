@@ -28,3 +28,16 @@ Parameter Configuration
 #### ATHV
 get hardware version
 
+#### ATBD
+get/set baudrate (speed of communication)
+
+0 - 7 (standard baud rates)
+0 = 1200 bps
+1 = 2400
+2 = 4800
+3 = 9600
+4 = 19200
+5 = 38400
+6 = 57600
+7 = 115200
+
