@@ -29,3 +29,4 @@ works like Arduino
 ##### API packet
 ![pins](img/apidata.png)
 
+0x7E (hex) = 7*16 + 14 = 126 (dec)
