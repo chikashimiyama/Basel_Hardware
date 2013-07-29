@@ -36,8 +36,9 @@ get/set baudrate (speed of communication)
 #### ATAP
 get/set API operation
 
-0 = AT
-1 = API
+0. AT
+1. API
+2. API (escape mode)
 
 #### ATD0, ATD1, ATD2, ATD3, ATD4, ATD5, ATD6, ATD7
 get/set PIN
