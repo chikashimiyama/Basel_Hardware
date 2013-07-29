@@ -43,3 +43,11 @@ works like Arduino
 ![pins](img/apidata.png)
 
 0x7E (hex) = 7*16 + 14 = 126 (dec)
+
+#### IO Format
+
+![ioformat](img/ioformat.png)
+
+#### 16 bit packet
+![16packet](img/16packet.png)
+
