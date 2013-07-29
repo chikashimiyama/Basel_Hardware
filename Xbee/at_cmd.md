@@ -3,20 +3,22 @@
 #### +++
 Just send a ping to the connected Xbee. Xbee returns "OK" if its connected.
 
+#### ATRE
+factory reset
+
+#### ATWR
+Save setting
+
 #### ATID
 get/set PAN(Personal Area Network) ID
 Only modules with matching PAN IDs can communicate with each other.
-
-#### ATMY
-get/set network address
 
 #### ATIR
 get/set sampling rate of ADC
 0 = disabled
 10 = every 10 msec.
 
-#### ATHV
-get hardware version
+
 
 #### ATBD
 get/set baudrate (speed of communication)
@@ -79,4 +81,5 @@ get/set PIN
 3. DI
 (1,2,4 & 5 n/a)
 
-
+#### ATHV
+get hardware version
