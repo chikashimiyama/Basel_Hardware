@@ -12,3 +12,12 @@ Appropriate for more complex and larger network.
 It is possible to route and forward messages.
 
 
+### AT/API Operation
+
+#### AT Operation
+
+forwards all received UART messages to another Xbee antenna
+
+#### API Operation
+
+works like Arduino
