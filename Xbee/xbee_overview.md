@@ -27,5 +27,5 @@ forwards all received UART messages to another Xbee antenna
 
 works like Arduino
 ##### API packet
-![pins](img/api.png)
+![pins](img/apidata.png)
 
