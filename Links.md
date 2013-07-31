@@ -7,6 +7,9 @@ https://www.sparkfun.com/distributors
 Digi Xbee
 http://www.digi.com/products/wireless-wired-embedded-solutions/zigbee-rf-modules/point-multipoint-rfmodules/xbee-series1-module#overview
 
+Make
+http://makezine.com/
+
 ### Small Computer
 Intel Nuc
 http://www.intel.com/content/www/us/en/motherboards/desktop-motherboards/nuc.html
