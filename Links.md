@@ -1,6 +1,5 @@
 Sparkfun
-
-[Sparkfun](http://www.sparkfun.com/ "Sparkfun")
+http://www.sparkfun.com/
 
 Distributor
 https://www.sparkfun.com/distributors
