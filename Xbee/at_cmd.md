@@ -12,6 +12,9 @@ Save setting
 #### ATMY
 OWN address
 
+#### ATIC
+detect digital change and send packet
+
 #### ATID
 get/set PAN(Personal Area Network) ID
 Only modules with matching PAN IDs can communicate with each other.
@@ -20,6 +23,7 @@ Only modules with matching PAN IDs can communicate with each other.
 get/set sampling rate of ADC
 0 = disabled
 10 = every 10 msec.
+less than 20 not recommended
 
 #### ATBD
 get/set baudrate (speed of communication)
