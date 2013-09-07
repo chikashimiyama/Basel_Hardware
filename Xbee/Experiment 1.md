@@ -27,5 +27,5 @@ Wir blinken eine LED, die 10 meter entfernt vom Computer, mit Max/MSP toggle GUI
 ### Warum brauchen wir Breakout?
 
 Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand zwsichen Pins von Xbee ist 2mm.
-![Diagram](img/xbee_mit_bo.jpg)
+![Diagram](img/xbee_mit_bo.jpg){ width: 200px; }
 
