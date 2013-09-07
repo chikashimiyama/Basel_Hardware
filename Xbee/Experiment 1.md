@@ -21,11 +21,23 @@ Wir blinken eine LED, die 10 meter entfernt vom Computer, mit Max/MSP toggle GUI
 * 1x 550 Ohm Widerstand
 * 1x Xbee Explorer USB (https://www.sparkfun.com/products/9819)
 * 1x Xbee Breakout (https://www.sparkfun.com/products/8276)
-* 2x 2mm header female (https://www.sparkfun.com/products/8272)
-* 2x 0,1inch header male (https://www.sparkfun.com/products/10527)
+* 2x 2mm header-female (https://www.sparkfun.com/products/8272)
+* 2x 0,1inch header-male (https://www.sparkfun.com/products/10527)
 
-### Warum brauchen wir Breakout?
+#### Warum brauchen wir Breakout?
 
 Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand zwsichen Pins von Xbee ist 2mm.
-![Diagram](img/xbee_mit_bo.jpg){ width: 200px; }
+![Diagram](img/xbee_mit_bo.jpg)
+
+### USB + Xbee auf MacOX
+
+![Diagram](img/usb_dongle.jpg)
+
+Für die Xbee-Einstellung CoolTerm (http://freeware.the-meiers.org/) wird sehr häufig verwendet.
+
+
+
+### Referenz
+
+http://examples.digi.com/sensors/802-15-4-digital-input-with-a-button/
 
