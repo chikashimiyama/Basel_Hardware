@@ -6,6 +6,8 @@ Der Modus ist nutzlich, wenn man ein Arduino und Computer kombinieren und das Ar
 ### Ziel
 Wir blinken eine LED, die 10 meter entfernt vom Computer, mit Max/MSP toggle GUI.
 
+![Diagram](img/diagram.png)
+
 ### Materialien
 
 * 2x Xbee S1 Antenne 
