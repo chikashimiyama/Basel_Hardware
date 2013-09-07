@@ -19,7 +19,7 @@ Wir blinken eine LED, die 10 meter entfernt vom Computer, mit Max/MSP toggle GUI
 * 1x Arduino Uno
 * 1x LED
 * 1x 550 Ohm Widerstand
-* 1x Xbee Explorer USB (https://www.sparkfun.com/products/8687)
+* 1x Xbee Explorer USB (https://www.sparkfun.com/products/9819)
 * 1x Xbee Breakout (https://www.sparkfun.com/products/8276)
 * 2x 2mm header female (https://www.sparkfun.com/products/8272)
 * 2x 0,1inch header male (https://www.sparkfun.com/products/10527)
