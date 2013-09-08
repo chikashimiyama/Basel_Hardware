@@ -46,9 +46,11 @@ Für die Xbee-Einstellung CoolTerm (http://freeware.the-meiers.org/) wird sehr h
 ### Der Erste Kontakt mit Xbee
 
 Schreiben Sie "+++" und warten Sie auf die Antwort.
+
 ![image](img/+++.png)
 
 Sie bekommen normalerweise "OK" von Xbee 1-3 Sekunden später.
+
 ![image](img/OK.png)
 
 ### AT Commands
@@ -59,16 +61,21 @@ Die folgende Liste zeigt alle wichtige AT Commands, die Xbee-Antennen verstehen.
 
 #### Abfrage
 Schreiben Sie "atmy" und drücken Sie die Eingabetaste.
+
 ![image](img/atmy.png)
+
 Die Identifikationsnummer dieser Antenne lautet "0".
 
 #### Abänderung
 Schreiben Sie "atmy 0" und drücken Sie die Eingebetaste.
+
 ![image](img/atmy2.png)
+
 Dann Fragen Sie die ID-Nr wieder. Die ID-Nr wurde geändert.
 
 #### Speicherung
 Mit "atwr" kann man die Einstelung speichern.
+
 ![image](img/atwr.png)
 
 Alle Einstellung wird gelöscht, wenn man keinen "atwr" command ausführt.
