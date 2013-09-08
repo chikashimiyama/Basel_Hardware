@@ -1,8 +1,9 @@
 ## AT Mode
 
-Es gitb zwei Modi:
-- AT Modus
-- API Modus
+Es gitb zwei Modi
+
+* AT Modus
+* API Modus
 
 Mit AT Mode kann man zwei Xbee-Antennen als Absender und Empfänger der UART-Nachrichten verwenden.
 Der Modus ist nutzlich, wenn man ein Arduino und Computer kombinieren und das Arduino weit weg von dem Computer positionieren möchte.
@@ -27,6 +28,7 @@ Wir blinken eine LED, die 10 meter entfernt vom Computer, mit Max/MSP toggle GUI
 #### Warum brauchen wir Breakout?
 
 Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand zwsichen Pins von Xbee ist 2mm.
+
 ![Diagram](img/xbee_mit_bo.jpg)
 
 ### USB + Xbee auf MacOX
@@ -38,7 +40,38 @@ Für die Xbee-Einstellung CoolTerm (http://freeware.the-meiers.org/) wird sehr h
 ### CoolTerm Einstellungen
 
 #### Options
+![image](img/terminal.png)
+![image](img/serial.png)
 
+### Der Erste Kontakt mit Xbee
+
+Schreiben Sie "+++" und warten Sie auf die Antwort.
+![image](img/+++.png)
+
+Sie bekommen normalerweise "OK" von Xbee 1-3 Sekunden später.
+![image](img/OK.png)
+
+### AT Commands
+
+Die folgende Liste zeigt alle wichtige AT Commands, die Xbee-Antennen verstehen.
+
+[at command](at_cmd.md)
+
+#### Abfrage
+Schreiben Sie "atmy" und drücken Sie die Eingabetaste.
+![image](img/atmy.png)
+Die Identifikationsnummer dieser Antenne lautet "0".
+
+#### Abänderung
+Schreiben Sie "atmy 0" und drücken Sie die Eingebetaste.
+![image](img/atmy2.png)
+Dann Fragen Sie die ID-Nr wieder. Die ID-Nr wurde geändert.
+
+#### Speicherung
+Mit "atwr" kann man die Einstelung speichern.
+![image](img/atwr.png)
+
+Alle Einstellung wird gelöscht, wenn man keinen "atwr" command ausführt.
 
 ### Referenz
 
