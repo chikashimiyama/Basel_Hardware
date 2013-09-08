@@ -35,6 +35,9 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
 
 Für die Xbee-Einstellung CoolTerm (http://freeware.the-meiers.org/) wird sehr häufig verwendet.
 
+### CoolTerm Einstellungen
+
+#### Options
 
 
 ### Referenz
