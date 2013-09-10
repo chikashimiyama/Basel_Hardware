@@ -1,4 +1,18 @@
-# Experiment 1: P2P
+# Klasse 1, Hallo Xbee
+
+## Die Xbee Series 1 Antenne
+
+
+* Voltzahl = 3.3v
+* 8x Digitaleingänge
+* 6x Analogeingänge
+* 1x UART (Serial)
+* 2x PWM (Pulse Wave Modulation)
+
+![pins](img/pins.png)
+
+
+## Experiment 1
 
 ## Ziel
 Die Erstellung eines Xbee-Netzwerks zwischen zwei Computer.
@@ -46,7 +60,7 @@ Schreiben Sie "atmy" und drücken Sie die Eingabetaste.
 
 Die Identifikationsnummer dieser Antenne lautet "0".
 
-### Abänderung
+### Änderung
 Schreiben Sie "atmy 0" und drücken Sie die Eingebetaste.
 
 ![image](img/atmy2.png)
@@ -110,18 +124,55 @@ Einstelung der zwei Antennen
 
 ![image](img/hello2.png)
 
-# Experiment 2: Serial-Objekt
+---------------------
+# Experiment 2: Broadcasting
 
-Man kann auch von Max Serial Messages an den zweiten Computer senden.
+Ein Xbee kann an meherere Antennen nachricht schicken.
+
+
+## Ziel
+![image](img/hello_broadcast.png)
+
+
+
+
+|     |Xbee A       | Xbee B       | Xbee C       |
+|-----|------------ | -------------| -------------| 
+|atid |5000         | 5000         | 5000         | 
+|atmy |1            | 2            | 3            |
+|atdl |FFFF         | 1            | 1            |
+
+
+FFFF bedeutet "an alle Antennen im Netzwerk"
+
+---------------------
+# Experiment 3: Serial-Objekt
+
+## Ziel
+Von Max Serial Messages an den zweiten Computer senden.
+
+### Max -> Coolterm
 
 ![image](img/hello_max.png)
+Max Patch
+
+
 ![image](img/hello_term.png)
+Coolterm
 
-### Baud
 
-baud rate bedeutet die Geschwindigkeit. Baud ist einstellbar mit atbd Command.
+### Max -> Max
 
-# Experiment 3: XBee + Arduino + LED 
+
+
+
+### Was ist Baudrate?
+
+baud rate bedeutet die Geschwindigkeit. Baud ist einstellbar mit atbd Command. 
+Vorsicht: Wir benutzen immer 9600 baurd in diesem Kurs.
+
+---------------------
+# Experiment 4: XBee + Arduino + LED 
 
 ## Ziel
 Wir blinken eine LED, die 10 meter entfernt vom Computer, mit Max/MSP toggle GUI.
@@ -168,11 +219,15 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
   	}
 }
 
-# Experiment 4: XBee + Arduino + Knopf 
+---------------------
+# Experiment 5: XBee + Arduino + Knopf 
 
-
+##Ziel
+![Diagram_button](img/diagram_button.png)
 
 ### Arduino Programm
+
+Alle 5 msek. schickt das folgende Arduino-Programm dem Computer den Zustand des Knopfs . 
 
 	int button = 13;
 
@@ -187,24 +242,7 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
   		delay(5);
 	}
 
-# Experiment 5: XBee + Arduino + POT
 
-
-
-
-
-
-
- 
-
-### Modi
-Es gitb zwei Modi
-
-* AT Modus
-* API Modus
-
-Mit AT Mode kann man zwei Xbee-Antennen als Absender und Empfänger der UART-Nachrichten verwenden.
-Der Modus ist nutzlich, wenn man ein Arduino und Computer kombinieren und das Arduino weit weg von dem Computer positionieren möchte.
 
 ### Referenz
 
