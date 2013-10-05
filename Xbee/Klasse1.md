@@ -248,3 +248,6 @@ Alle 5 msek. schickt das folgende Arduino-Programm dem Computer den Zustand des 
 
 http://examples.digi.com/sensors/802-15-4-digital-input-with-a-button/
 
+---------------------
+# Experiment 6: XBee + Arduino + Infrarotsensor
+
