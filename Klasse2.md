@@ -1,5 +1,13 @@
 # Klasse 2, Goodbye Arduino
 
+
+---------------------
+# Experiment 6: XBee + Arduino + Infrarotsensor
+
+
+
+
+
 ### Modi
 Es gitb zwei Modi
 
