@@ -169,7 +169,7 @@ Coolterm
 ### Was ist Baudrate?
 
 baud rate bedeutet die Geschwindigkeit. Baud ist einstellbar mit atbd Command. 
-Vorsicht: Wir benutzen immer 9600 baurd in diesem Kurs.
+Vorsicht: Wir benutzen immer 9600 baud in diesem Kurs.
 
 ---------------------
 # Experiment 4: XBee + Arduino + LED 
