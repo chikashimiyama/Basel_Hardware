@@ -17,9 +17,12 @@
 	* Change Detect
 	* PIN-Einstellung mit AT Commands
 	* ADCs auf Xbee
-* 21.Nov - Xbee Fortgeschrittene Anwendungen [Experiment 11-13] / RaspPi
+* 21.Nov - Xbee Fortgeschrittene Anwendungen [Experiment 10-15]
 	* Xbee und PWM	
 	* RaspPi SD Card installation
+	* 
+	
+
 * 28.Nov - Raspberry Pi Basis 
 	* Satelite CCRMA	
 	* Remote Desktop
@@ -28,4 +31,5 @@
 * 19.Dez - Raspberry Pi + Arduino und Xbee
 	* Arduino + RaspPi
 	* Slice of Pi
+	* 
 * 16.Jan - Präsentation?
