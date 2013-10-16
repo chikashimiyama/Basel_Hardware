@@ -7,7 +7,7 @@ void setup() {
 
 void loop() {
   int input = digitalRead(button);
-  Serial.write(input);  
-  delay(5);
+  Serial.print(input);  
+  delay(500);
 }
 

@@ -197,6 +197,7 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
 
 ![Diagram](img/xbee_mit_bo.jpg)
 
+![Diagram](img/exp4.png)
 
 ### Arduino Programm
 
@@ -224,6 +225,7 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
 
 ##Ziel
 ![Diagram_button](img/diagram_button.png)
+![Diagram](img/exp5.png)
 
 ### Arduino Programm
 
@@ -238,7 +240,7 @@ Alle 5 msek. schickt das folgende Arduino-Programm dem Computer den Zustand des 
 
 	void loop() {
   		int input = digitalRead(button);
-  		Serial.write(input);  
+  		Serial.print(input);  
   		delay(5);
 	}
 
@@ -248,6 +250,4 @@ Alle 5 msek. schickt das folgende Arduino-Programm dem Computer den Zustand des 
 
 http://examples.digi.com/sensors/802-15-4-digital-input-with-a-button/
 
----------------------
-# Experiment 6: XBee + Arduino + Infrarotsensor
 
