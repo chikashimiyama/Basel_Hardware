@@ -1,6 +1,5 @@
 # Klasse 2, Goodbye Arduino
 
-<<<<<<< HEAD
 # Experiment 6: XBee + Arduino + POT
 
 ![Diagram](img/exp6.png)
@@ -137,5 +136,3 @@ Wenn die Daten 126 beinhaltet, ersetzt Xbee sie durch 0.
 
 
 ---
-=======
->>>>>>> 644f6572180e7ce36fe4e298aa342652515263b8
