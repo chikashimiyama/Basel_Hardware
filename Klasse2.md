@@ -1,5 +1,6 @@
 # Klasse 2, Goodbye Arduino
 
+<<<<<<< HEAD
 # Experiment 6: XBee + Arduino + POT
 
 ![Diagram](img/exp6.png)
@@ -17,6 +18,16 @@
 	}
 
 ---
+=======
+
+---------------------
+# Experiment 6: XBee + Arduino + Infrarotsensor
+
+
+
+
+
+>>>>>>> 644f6572180e7ce36fe4e298aa342652515263b8
 ### Modi
 Es gibt zwei Modi
 
@@ -25,6 +36,7 @@ Es gibt zwei Modi
 
 Mit AT Mode kann man zwei Xbee-Antennen als Absender und Empfänger der UART-Nachrichten verwenden.
 Der Modus ist nutzlich, wenn man ein Arduino und Computer kombinieren und das Arduino weit weg von dem Computer positionieren möchte.
+<<<<<<< HEAD
 
 ---
 # Experiment 7: XBee + Knopf 
@@ -125,3 +137,5 @@ Wenn die Daten 126 beinhaltet, ersetzt Xbee sie durch 0.
 
 
 ---
+=======
+>>>>>>> 644f6572180e7ce36fe4e298aa342652515263b8
