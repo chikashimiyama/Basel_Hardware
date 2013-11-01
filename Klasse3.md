@@ -69,9 +69,118 @@ Die Klangqualität des on-board DAC ist nicht so gut und es gibt keine audio EIN
 
 ![inLine 33051D](img/inline.jpg)
 
-## Satelites CCRMA
+## Betriebssysteme für RaspPi
+
+### Verschiedene Linux OS
+
+Man kann  vershiedene OS auf RaspPi laufen lassen
+- Raspbian (das offizielle Betriebssytem für RaspPi)
+- Ubntu
+- RiscOS
+
+### Satellite CCRMA
+CCRMA = Center for Computer Reserach in Music and Acoustic, an der Stanford Universtität
+
+Satellite CCRMA ist ein RaspPi-OS + Software-bundle für Musiker und Medienkünstler. Die folgende Software sind schon installiert.
+
+- Pure Data
+- Arduino 
+- Audacity
+- ChucK
+- SuperCollider
+- Jack
 
 
+[Webseite](https://ccrma.stanford.edu/~eberdahl/Satellite/)
+
+### Probleme mit Satellite CCRMA?
+
+[Google Group von Satellites CCRMA](https://groups.google.com/forum/#!forum/satelliteccrma)
+
+## Herunterladen und Installation
+
+- [Binary](https://ccrma.stanford.edu/~eberdahl/Satellite/SatelliteCCRMA_Rpi_v0.98.dd.zip)
+- [Anweisung](https://ccrma.stanford.edu/wiki/Satellite_CCRMA_First_Steps)
+
+
+## Remote Desktop
+![Remote Desktop](img/remote_desktop.png)
+
+Der RaspPi könnte wie ein Desktop-Computer benutzen werden aber ein Bildschirm (oder Fernseher) und eine Tastatur (+ ein Maus) sind nötig.
+
+![normal](img/normal.png)
+
+
+Remote Desktop ermöglicht uns mit dem Bildschirm und der Tastatur von Mac den RaspPi zu steuern.
+
+![normal](img/remotedesktop.png)
+
+
+### XQuartz
+
+Remote Desktop braucht "XQuartz", um GUI von RaspPi auf dem Bildschirm von Mac anzuzeigen.
+
+[XQuartz](http://xquartz.macosforge.org/landing/)
+
+
+## Einschaltung
+
+Es gibt keinen Schalter auf der Platine und keine Anschluss für ein Netzteil; ein USB-Kabel (Micro USB) Liefert Strom zum RaspPi.
+
+#### Direkt von Mac
+![macusb](img/mac_usb.png)
+
+#### USB-Hub mit Netzteil
+![macusb](img/usbhub.png)
+
+
+#### Netzteil
+![macusb](img/adapter.png)
+
+
+#### GPIO Header
+![macusb](img/gpio.png) z.B. mit Akku.
+
+
+## SSH Verbindung
+
+
+### Mac Netzwerkeinstellung
+- IP Address: 192.168.105.105
+- Subnet Mask: 255.255.255.0
+
+
+### Ping
+
+	> ping 192.168.105.106 (192.168.105.106): 56 data bytes
+	> 64 bytes from 192.168.105.106: icmp_seq=0 ttl=64 time=1.604 ms
+	> 64 bytes from 192.168.105.106: icmp_seq=1 ttl=64 time=0.767 ms
+	> 64 bytes from 192.168.105.106: icmp_seq=2 ttl=64 time=0.977 ms
+	> 64 bytes from 192.168.105.106: icmp_seq=3 ttl=64 time=0.890 ms
+	> 64 bytes from 192.168.105.106: icmp_seq=4 ttl=64 time=0.743 ms
+
+### SSH Command auf Terminal
+
+	> ssh -XY ccrma@192.168.105.106
+	> passwd: temppwd
+
+
+## Unix-Befehle
+
+[Unix-Befehle für Anfänger](http://nafoku.de/t/unix.htm)
+
+### Pure Data
+	> pd &
+	
+### Audacity
+	> audacity &
+
+### Arduino
+	> arduino &	
+
+## Klangsynthese mit Pd
+
+[Programmierung Elektronischer Musik in Pd](http://www.pd-tutorial.com/german/index.html)	 von Johannes Kreidler
 
 
 
