@@ -183,4 +183,6 @@ Es gibt keinen Schalter auf der Platine und keine Anschluss für ein Netzteil; e
 [Programmierung Elektronischer Musik in Pd](http://www.pd-tutorial.com/german/index.html)	 von Johannes Kreidler
 
 
+## Ausschalten
 
+	> halt

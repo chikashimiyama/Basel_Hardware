@@ -127,3 +127,12 @@ Wenn die Daten 126 beinhaltet, ersetzt Xbee sie durch 0.
 
 
 Man kann verschiedenen Sensoren statt POT benutzen.
+
+---
+
+# E-Textil
+
+[LilyPad Arduino](https://www.sparkfun.com/products/9266)
+
+[How to LilyPad Arduino](http://lilypadarduino.org/)
+
