@@ -3,6 +3,7 @@
 # Experiment 6: XBee + Arduino + POT
 
 ![Diagram](img/exp6.png)
+
 ---
 	int sensor = A0;
 
@@ -17,6 +18,9 @@
 	}
 
 ---
+
+![adc_xbee](img/adc_xbee.png)
+
 =======
 
 # Experiment 7: XBee + Knopf 
@@ -137,3 +141,15 @@ Man kann verschiedenen Sensoren statt POT benutzen.
 [How to LilyPad Arduino](http://lilypadarduino.org/)
 
 [LilyPad Accessaries](https://www.sparkfun.com/categories/135)
+
+
+---
+
+# Name einer Antenne
+
+
+- ATNI (Node Identifier) …  eine Antenne benennen (z.B. ATNI Tom)
+- ATND (Node Descover) … Antenne im Netzwerk finden und eine Liste anzeigen 
+	- Beispielantwort		- 100 (MY address)		- 13A200 (Serial Number HIGH)		- 40A1640D (Serial Number LOW)		- 26 (Signal Strength)
+		- jerry (Name der Antenne)- ATNT (Node Descover Time) … Die max. Dauer der Nachbarsuche
+- ATDN … man kann den Empfänger der Nachrichte mit Name angeben. Dieser Befehl ändert automatisch den Wert von ATDL ab.
