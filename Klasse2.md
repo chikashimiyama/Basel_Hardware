@@ -25,6 +25,7 @@
 
 # Experiment 7: XBee + Knopf 
 
+
 ---------------------
 ![Diagram](img/exp7.png)
 
@@ -35,23 +36,29 @@ Es gibt zwei Modi
 * AT Modus
 * API Modus
 
-Mit AT Modus kann man zwei Xbee-Antennen als Absender und Empfänger der UART-Nachrichten verwenden. Der Modus ist nützlich, wenn man einen Computer und einen Arduino, der ganz weit weg von dem Computer positioniert wird, kombinieren möchte.
+#### AT Modus (default)
+Zwei Xbee Antenne realisieren eine kabellose serielle (UART) Verbindung.
 
----
+#### API Modus
+Die Xbee Antenne funktioniert wie ein Arduino aber man kann nicht ein eigenen Programm auf die Antenne hochladen. 
 
-###Moduswechsel
+Es gibt auch [Programmable Xbee](http://www.digi.com/products/wireless-wired-embedded-solutions/zigbee-rf-modules/zigbee-mesh-module/xbee-zb-module) aber sehr tauer.
 
-ATAP = 0 … AT Modus
-ATAP = 2 … API Modus
-Einstellung
+### Moduswechsel
 
+- ATAP = 0 … AT Modus
+- ATAP = 2 … API Modus
+
+#### Einstellung mit AT Command
+
+##### Absender
 |     |Xbee A       |Xbee B |
 |-----|-------------|-------|
 |atid |xxx          |xxx    |
 |atmy |1            |2      |
 |atdl |2            |1      |
 |atap |2            |0      |
-|atd0 |1            |       |
+|atd0 |3 (DIN)      |       |
 |atd1 |0            |       |
 |atd2 |0            |       |
 |atd3 |0            |       |
@@ -62,14 +69,18 @@ Einstellung
 |atd8 |0            |       |
 |atir |30           |       |
 
-
+xxx … deine lieblingszahl
 
 Wir benutzen nur Digital 0 als Digitaleingang. (atd0 = 1)
-Der Wert von ATIR definiert das Intervall der Konvertierungen und Übertragung
+Der Wert von ATIR definiert das Intervall der Konvertierungen und Übertragung (default = 20)
+
+
+### Binärsystem
+[Wikipedia Binärsystem](http://de.wikipedia.org/wiki/Dualsystem)
 
 ###Analyse
 
-Xbee Antenne bekommen eine Liste wie folgende: 
+Xbee Antenne (Empfänger) bekommen eine Liste wie folgende: 
 126 0 10 131 0 1 36 0 1 0 1 0 1 81 
 
 |Byte|Zahl|Funktion          |Bedeutung       |
@@ -94,6 +105,15 @@ Check Sum:
 131+0+1+36+0+1+0+1+0+1 = 171
 255 - 171 = 84
 
+![structure](img/structure.png)
+
+### Decorder im Max Patch
+![delmiter](img/decoder.png)
+
+---
+
+![decorder](img/decoder_deluxe.png)
+
 ###Zwei API Modi
 
 ATAP 1 = API MODE
@@ -107,6 +127,27 @@ Wenn die Daten 126 beinhaltet, ersetzt Xbee sie durch 0.
 ---
 # Experiment 8: XBee + POT 
 
+##### Absender
+|     |Xbee A       |Xbee B |
+|-----|-------------|-------|
+|atid |xxx          |xxx    |
+|atmy |1            |2      |
+|atdl |2            |1      |
+|atap |2            |0      |
+|atd0 |2 (AIN)      |       |
+|atd1 |0            |       |
+|atd2 |0            |       |
+|atd3 |0            |       |
+|atd4 |0            |       |
+|atd5 |0            |       |
+|atd6 |0            |       |
+|atd7 |0            |       |
+|atd8 |0            |       |
+|atir |30           |       |
+
+xxx … deine lieblingszahl
+
+Xbee Antenne (Empfänger) bekommen eine Liste wie folgende: 
 126 0 10 131 0 1 29 0 1 2 0 0 29 62
 
 
@@ -129,6 +170,8 @@ Wenn die Daten 126 beinhaltet, ersetzt Xbee sie durch 0.
 
 ![Diagram](img/exp8.png)
 
+### Decorder im Max Patch
+![delmiter](img/analog_xbee.png)
 
 Man kann verschiedenen Sensoren statt POT benutzen.
 
