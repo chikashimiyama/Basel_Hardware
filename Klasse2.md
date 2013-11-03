@@ -136,3 +136,4 @@ Man kann verschiedenen Sensoren statt POT benutzen.
 
 [How to LilyPad Arduino](http://lilypadarduino.org/)
 
+[LilyPad Accessaries](https://www.sparkfun.com/categories/135)

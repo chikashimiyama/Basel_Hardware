@@ -213,12 +213,12 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
  		 if (Serial.available() > 0) {
   		    input = Serial.read();
 			if(input > 50){
-    	    digitalWrite(led, HIGH);
-    	  }else{
-    	    digitalWrite(led, LOW);
-     	 }
-  	}
-}
+    	    	digitalWrite(led, HIGH);
+    	  	}else{
+    	   	 digitalWrite(led, LOW);
+     	 	}
+  		}
+	}
 
 ---------------------
 # Experiment 5: XBee + Arduino + Knopf 
@@ -229,7 +229,7 @@ Der Abstand zwischen Löcher auf einem Breadboard ist 0,1 inch. Aber der Abstand
 
 ### Arduino Programm
 
-Alle 5 msek. schickt das folgende Arduino-Programm dem Computer den Zustand des Knopfs . 
+Aller 5 msek. schickt das folgende Arduino-Programm den Zustand des Knopfs . 
 
 	int button = 13;
 
