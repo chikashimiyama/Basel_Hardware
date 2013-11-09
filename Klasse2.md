@@ -51,7 +51,7 @@ Es gibt auch [Programmable Xbee](http://www.digi.com/products/wireless-wired-emb
 
 #### Einstellung mit AT Command
 
-##### Absender
+##### Absender/Empfänger
 |     |Xbee A       |Xbee B |
 |-----|-------------|-------|
 |atid |xxx          |xxx    |
