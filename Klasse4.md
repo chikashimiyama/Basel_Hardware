@@ -1,4 +1,4 @@
-# Klasse 3, Hallo Raspberry Pi
+# Klasse 4, Hallo Raspberry Pi
 
 ## RaspBerry Pi
 Der Raspberry Pi ist ein kreditkartengroßer Einplatinencomputer, der von der Raspberry Pi Foundation entwickelt wurde. 
@@ -97,7 +97,7 @@ Satellite CCRMA ist ein RaspPi-OS + Software-bundle für Musiker und Medienküns
 
 [Google Group von Satellites CCRMA](https://groups.google.com/forum/#!forum/satelliteccrma)
 
-## Herunterladen und Installation
+## Unterladen und Installation
 
 - [Binary](https://ccrma.stanford.edu/~eberdahl/Satellite/SatelliteCCRMA_Rpi_v0.98.dd.zip)
 - [Anweisung](https://ccrma.stanford.edu/wiki/Satellite_CCRMA_First_Steps)
@@ -181,8 +181,44 @@ Es gibt keinen Schalter auf der Platine und keine Anschluss für ein Netzteil; e
 ## Klangsynthese mit Pd
 
 [Programmierung Elektronischer Musik in Pd](http://www.pd-tutorial.com/german/index.html)	 von Johannes Kreidler
+- für Anfänger
 
+[The Theory and Technique of electronic music](http://msp.ucsd.edu/techniques.htm) von Miller Puckette
+- für Mathematiker
+
+[Pure Data Tutorials and Reference (auf Japanisch!)](http://www.amazon.co.jp/dp/486267142X)	 von Chikashi Miyama - das großte Pd Buch in der Welt. Kann jemand mein Buch übersetzen?
 
 ## Ausschalten
 
 	> halt
+	
+	
+## Daughterboard
+
+### Pi + Xbee =>  Slice of Pi
+
+![Slice of Pi](http://cdn2.bigcommerce.com/server3700/8d73a/products/195/images/381/IMG_4569__46803.1330791317.172.172.JPG)
+
+- günstig, um Xbee und RaspPi zu kombinieren
+- von CISECO [online shop](http://shop.ciseco.co.uk/slice-of-pi-add-on-for-raspberry-pi/)
+
+### Pi + Kamera =>  Kamera Module
+
+![kamera](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/8/6/8/11868-00a_medium.jpg)
+
+- [Kamera Module](https://www.sparkfun.com/products/11868)
+
+### Pi + Physical Computing => Gertboard
+
+![Gertboard](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/7/7/3/11773-01_medium.jpg)
+
+- [Gertboard](https://www.sparkfun.com/products/11773)
+- [Demo](http://www.raspberrypi.org/archives/tag/gertboard)
+
+
+## RaspBerry Pi TV
+[RaspberryPi](http://raspi.tv/)
+
+- Tutorials
+- Daughterboard
+- Projekte

@@ -1,5 +1,6 @@
+# Klasse 5, Bees above Raspberry
 	
-## RaspPi + Arduino + Pd
+## Arduino + Pd auf Raspberry Pi
 
 ### Standard Firmata
 
@@ -7,9 +8,13 @@
 File > Example > Firmata > StandardFirmata
 
 ### Pduino
+ein Abstract für Arduino
+[Unterladen](http://at.or.at/hans/pd/objects.html)
 
-webseite
+## Xbee + Pd auf Raspberry Pi
 
+### "Comport" Objekt
 
+funktioniert wie "Serial" Objekt
 
 
