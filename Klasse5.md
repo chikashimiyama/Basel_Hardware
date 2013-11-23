@@ -181,7 +181,22 @@ Dieses OSC Netz ermöglicht z.B. mehrere Pi mit einem Mac zu steuern.
 
 [USB WLAN Adapter für RaspPi](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
 
+### Änderung der IP Adresse
 
+temporal
+
+	>sudo ifconfig eth0 192.168.105.107
+
+permanent
+
+	>sudo nano /etc/network/interfaces
+	
+![ipsetting](img/ipsetting.png)
+
+	>sudo reboot
+	
+	>ssh -XY ccrma@192.168.105.107
+	
 ## Experiment 17: MIDI Syntheizer
 
 ### MIDI Kbd + Pi + Pd 
