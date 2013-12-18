@@ -29,23 +29,22 @@ GPIO = General Purpose Input Output (http://de.wikipedia.org/wiki/Allzweckeingab
 
 ### Wofür brauchen wir GPIO?
 
-Mit GPIO kann man RaspPi als Arduino benutzen. Diese Pins ermöglichen uns LEDs zu blinken, Servos zu steuern, mit externe ADCs zu kommunizieren usw. d.h. man kann ohne Arduino ein musikalisches Instrument entwicklen.
+Mit GPIO kann man RaspPi als Arduino benutzen. Diese Pins ermöglichen RaspPi LEDs zu blinken, Servos zu steuern, usw. d.h. man kann ohne Arduino ein musikalisches Interface (z.B MIDI Controller) entwicklen.
 
 ### Pins
 
-GPIO auf Pi besteht aus 26 männliche Pins. Die Funktionen jedes Pins ist folgendes:
-
+GPIO auf Pi besteht aus 26 Pins.
 ![gpio](img/pi_gpio.jpg)
 
-### mänliche Pins
+### Fimale Jumper Wires
 
-Leider sind alle Pins mänlich. wir benötigen [Female-Male Jumper Wire ](https://www.sparkfun.com/products/9140), um GPIO mit einer Steckplatine zu experimentieren.
+Leider sind alle Pins mänlich. Wir benötigen [Female-Male Jumper Wire ](https://www.sparkfun.com/products/9140), um GPIO mit einer Steckplatine zu experimentieren.
 
 ![fm](img/female-male.jpg)
 
 
 
-Ein Beispiel mit Jumper Wire.
+Ein Beispielsystem mit Jumper Wires.
 ![jp](img/beispiel.jpg)
 
 ### Experimentierplatine
@@ -159,7 +158,7 @@ SEI VORSICHTIG!! Falsche Verbindung kann die Platine beschädigen!
 
 ### gpio Befehl
 
-gpio ist ein Dienstprogramm, das mit WiringPi entwickelt wurde. gpio akzeptiert viele Optionen. der folgende Befehl lässt das Programm die Liste der Optionen anzuzeigen.
+"gpio" ist ein Dienstprogramm, das mit WiringPi entwickelt wurde. "gpio" akzeptiert viele Optionen. Der folgende Befehl lässt das Programm die Liste der Optionen anzeigen.
 
 	> sudo gpio -h
 
@@ -187,7 +186,7 @@ ausschalten:
 	> sudo gpio write 11 0
 	
 
-GPIO Pins können durch Unix-befehle kontrollierbar.
+GPIO Pins können durch Unix-befehle (ohne C Programme) kontrollierbar.
 
 #### Shell Script
 
@@ -210,7 +209,7 @@ Mit sh Befehl das Script ausführen
 
 	> sh blink.sh
 	
-## Experiment 17: Pd steurt GPIO
+## Experiment 17: Pd steuert GPIO
 
 ### Blinkende LED auf Pd
 
@@ -225,7 +224,37 @@ Man kann mit "gpio read 11" Pin-Status checken. Interene Pull-up ist auch mögli
 ![gpioin](img/gpio_in.png)
 
 
-## Experiment 18: ADC und RaspPi
+## Experiment 18: Die 1-bit Musik
+
+SoftTone Library ermöglicht alle GPIO-Pins Rechteckschwingung zu generieren.
+VORSICHT! Bitte nur billige Lautsprecher für das Projekt verwenden. 
+
+### Software Tone Library
+
+	#include <wiringPi.h>
+	#include <softTone.h>
+	#define SPEAKER 11
+
+	int main(void){
+		wiringPiSetup ();
+		softToneCreate (SPEAKER) ; // initialisierung
+		for(;;){
+			softToneWrite(SPEAKER, 440);
+			delay(300);
+			softToneWrite(SPEAKER, 880);
+			delay(300);
+		}
+		return 0;
+	}
+
+![gpio_sound](img/gpio_speaker.png)
+
+	gcc -o sound sound.c -lwiringPi -lpthread 
+	
+#### The 1-bit Symphony
+http://www.1bitsymphony.com/
+
+## Experiment 19: ADC und RaspPi
 
 RaspPi hat keine ADC (Analog to Digital Converter) aber es gibt Pins für SPI (Serial Peripheral Interface). Mit SPI kann RaspPi mit einem oder mehreren externen ADCs komunizieren.
 
@@ -291,3 +320,23 @@ PIN 12 = MOSI
 ### Kompilation
 
 	> gcc -o spi spi.c -lwiringPi
+
+
+### Andere Anwendungen
+
+#### GPIO -> LCD
+
+![p](img/pilcd.jpg)
+
+[library](https://projects.drogon.net/raspberry-pi/gpio-examples/lcd-interface/)
+
+#### GPIO -> Servo
+
+[Servo](http://www.youtube.com/watch?v=ddlDgUymbxc)
+
+
+### Quellcode 
+
+[GPIODev](gpiode.tar.gz)
+[Pd Extern](pddev.tar.gz)
+
