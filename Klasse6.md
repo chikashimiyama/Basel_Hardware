@@ -1,4 +1,4 @@
-# Klasse 6, Pi, Xbee	und Arduino
+# Klasse 6  GPIO 
 
 ## Experiment 14: Arduino + Pd auf Raspberry Pi
 
