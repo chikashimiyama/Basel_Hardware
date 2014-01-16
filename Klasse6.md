@@ -1,4 +1,4 @@
-# Klasse 6, Pi, Xbee	und Arduino
+# Klasse 6  GPIO 
 
 ## Experiment 14: Arduino + Pd auf Raspberry Pi
 
@@ -36,7 +36,7 @@ Mit GPIO kann man RaspPi als Arduino benutzen. Diese Pins ermöglichen RaspPi LE
 GPIO auf Pi besteht aus 26 Pins.
 ![gpio](img/pi_gpio.jpg)
 
-### Fimale Jumper Wires
+### Female Jumper Wires
 
 Leider sind alle Pins mänlich. Wir benötigen [Female-Male Jumper Wire ](https://www.sparkfun.com/products/9140), um GPIO mit einer Steckplatine zu experimentieren.
 
